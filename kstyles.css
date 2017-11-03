@@ -1,0 +1,215 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  padding:0; margin:0; height:100%;
+}
+
+/* text styles */
+a {
+    text-decoration: none;
+}
+
+h1 {
+   font-family: 'Playfair Display SC', serif;
+   float: left;
+   margin-top: 15px;
+   margin-left: 5%;
+   font-size: 40px;
+   color: black;
+}
+
+p {
+   font-family: 'Open Sans', sans-serif;
+}
+
+/* nav bar */
+
+header nav {
+    float: right;
+    margin-top: 30px;
+    color: #dde1e4;
+    margin-right: 5%;
+}
+
+header nav a {
+    float: left;
+    display: block;
+    margin: 0 10px 0 10px;
+    font-size: 18px;
+    color: #373737;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4e7467;
+}
+
+header nav span {
+    float: left;
+    display: block;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 620px) {
+
+  #secondhead{
+    display: none;
+  }
+
+  .navbar1 {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+
+  header {
+    display: none;
+  }
+.navbar1 nav {
+   margin-top: 30px;
+   color: #dde1e4;
+   text-align: center;
+}
+.navbar1 nav a {
+   margin: 0 10px 0 10px;
+   font-size: 4vw;
+   color: #373737;
+   font-family: 'Open Sans', sans-serif;
+   text-decoration: none;
+}
+ .navbar1 nav span {
+   font-family: sans-serif;
+   font-size: 4vw;
+}
+
+#secondhead{
+  font-family: 'Playfair Display SC', serif;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+h6 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 20px;
+}
+ }
+
+.fullwidth { /*Container til forsidens øverste billede*/
+  text-align: center;
+  position: relative;
+  clear: both; /*Rydder op efter float på tidligere elementer*/
+}
+
+.fullwidth img{ /*forsidens øverste billede*/
+  max-width: 100%;
+}
+
+.fullwidth h2{ /*Teksten til forsidens øverste billede*/
+  position: absolute; /*Så den kan placeres på billedet*/
+  font-family: 'Playfair Display SC', serif;
+  color: white;
+  font-size: 6vw;
+  text-shadow: 0px 2px 5px #000;
+  top: 15%;
+  left: 50%; /*Placér forankringspunkt i midten*/
+  transform: translate(-50%, -50%); /*Sætter forankringspunktet til midten af linjen*/
+}
+
+.fullwidth button { /*Knap på top banner*/
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%); /*Sætter forankringspunktet til midten af linjen*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3vw;
+
+}
+
+#NewFur { /*Nye møbler tekst på forsiden*/
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+}
+
+@media (min-width: 801px) { /*Fire kolonner >800px*/
+.newfurniture {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+
+.topimg2{ /*Smalle top billede*/
+  display: none;
+  }
+
+.topimg1{ /*Brede top billede*/
+  display: block;
+  }
+
+  .singleproduct {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    max-width: 100%;
+  }
+
+  .singleproduct img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .newfurniture {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+}
+  .topimg1{
+  display: none;
+  }
+
+.topimg2{
+  display: block;
+  }
+}
+@media (max-width: 400px) {
+  .newfurniture {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+.newfurniture img { /*Billederne "nye møbler"*/
+  width: 100%;
+}
+
+/* footer */
+.page-footer {
+  width: auto;
+  height:5vw;
+  background-color: black;
+  clear: both;
+}
+
+.page-footer img {
+  width: 4vw;
+
+}
+
+.knap {
+  width: 15%;
+  display: inline;
+  max-width: 200px;
+  margin-left: 8%;
+  margin-right: 5%;
+  text-decoration: none;
+}

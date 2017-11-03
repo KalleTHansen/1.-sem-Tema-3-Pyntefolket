@@ -1,0 +1,407 @@
+
+/*______________________________-Generelts css-___________________________*/
+
+
+*{
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+body {
+  padding:0; margin:0; height:100%;
+}
+
+
+/*_______________________________-Forum menubar-_____________________________*/
+
+.forum {
+margin: 0 auto;
+}
+
+.forum ul {
+  list-style-type: none;
+  max-width: auto;
+}
+
+.forum h4 {
+  font-family: 'Playfair Display SC', serif;
+  max-width: 100%;
+  margin-bottom: 2px;
+  font-size: 30px;
+
+}
+
+.forum li p {
+max-width: 100%;
+font-family: 'Open Sans', sans-serif;
+margin-top: 2px;
+font-size: 23px;
+}
+
+.forum li {
+margin: 0 auto;
+max-width: 100%;
+padding-bottom: 10px;
+}
+/*____________________________________________________________________*/
+
+/*______________________-Katja-_____________________________________*/
+
+/* text styles */
+a { /*Fjerner understregning af links*/
+    text-decoration: none;
+}
+
+h1 {
+   font-family: 'Playfair Display SC', serif;
+   float: left;
+   margin-top: 15px;
+   margin-left: 5%;
+   font-size: 40px;
+   color: black;
+}
+
+p {
+   font-family: 'Open Sans', sans-serif;
+}
+
+/* nav bar */
+
+header nav {
+    float: right;
+    margin-top: 30px;
+    color: #dde1e4;
+    margin-right: 5%;
+}
+
+header nav a {
+    float: left;
+    display: block;
+    margin: 0 10px 0 10px;
+    font-size: 18px;
+    color: #373737;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4e7467;
+}
+
+header nav span {
+    float: left;
+    display: block;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 620px) {
+
+  #secondhead{
+    display: none;
+  }
+
+  .navbar1 {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+
+  header {
+    display: none;
+  }
+.navbar1 nav {
+   margin-top: 30px;
+   color: #dde1e4;
+   text-align: center;
+}
+.navbar1 nav a {
+   margin: 0 10px 0 10px;
+   font-size: 4vw;
+   color: #373737;
+   font-family: 'Open Sans', sans-serif;
+   text-decoration: none;
+}
+ .navbar1 nav span {
+   font-family: sans-serif;
+   font-size: 4vw;
+}
+
+#secondhead{
+  font-family: 'Playfair Display SC', serif;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+h6 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 20px;
+}
+ }
+
+/*_________________________________Katja images__________________ */
+
+
+.img {
+   max-width: 100%;
+   float: left;
+}
+
+
+.img1 {
+   display: inline-block;
+   float: left;
+   max-width: 49.5%;
+   margin-right: 1%;
+   margin-bottom: 1%;
+}
+
+.img2 {
+   display: inline-block;
+   max-width: 49.5%;
+}
+
+.imgline2 {
+   display: inline-block;
+   max-width: 49.5%;
+   margin-left: 1%;
+   float: right;
+   margin-bottom: 0.5%;
+}
+
+.imgline3 {
+   display: inline-block;
+   float: left;
+   max-width: 49.5%;
+   margin-bottom: 0.5%;
+}
+
+.imgline4 {
+   display: inline-block;
+   float: left;
+   max-width: 49.5%;
+   margin-right: 1%;
+   margin-top: 0.5%;
+   margin-bottom: 1%;
+}
+
+.imgline5 {
+   display: inline-block;
+   float: right;
+   max-width: 49.5%;
+   margin-top: 0.5%;
+   margin-bottom: 1%;
+}
+
+/* hover */
+
+.hover11 img {
+ opacity: 1;
+ transition: 0.4s ease-in-out;
+}
+
+.hover11:hover img {
+ opacity: 0.5;
+}
+
+/* media query */
+
+@media screen and (max-width: 1000px) {
+   .img img {
+      max-width: 100%;
+   }
+ }
+
+ /*_______________________________-Savan-_____________________________*/
+
+ body {
+   padding:0; margin:0; height:100%;
+ }
+
+ /* produkt billeder */
+ .produkt {
+    position: relative;
+    width: 100%;
+    margin-bottom: 6%;
+
+ }
+ .produkt img {
+   max-width: 100%;
+ }
+
+ .mobel {
+   width: 60%;
+   margin: 0 auto;
+   display: block;
+   margin: auto;
+   padding: 2% 0 2% 0;
+ }
+
+ /* footer */
+ .page-footer {
+   width: auto;
+   height:60px;
+   background-color: black;
+   clear: both;
+ }
+
+ .knap {
+   width: 15%;
+   display: inline;
+   max-width: 200px;
+   margin-left: 8%;
+   margin-right: 5%;
+   text-decoration: none;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ @media only screen and (min-width: 620px) {
+
+   .mobel {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    }
+
+    .mobel:hover {
+       opacity: 0.5;
+       }
+
+     .mobel {
+       width: 45%;
+       margin: 0 0 0 3%;
+       float: left;
+       padding: 2% 2% 2% 2%;
+       max-width: 100%
+       display: block;
+
+     }
+
+/*_________________________________-Kalle-_______________________________*/
+.singleproduct {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  max-width: 100%;
+  clear: both;
+}
+
+.singleproduct img {
+  max-width: 100%;
+  height: auto;
+}
+
+.TxtNBuy h2, .TxtNBuy h3 {
+  font-family: 'Playfair Display SC', serif;
+}
+
+.singleproduct button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*____________________________________-Camilla-__________________________*/
+
+h6 {
+	font-family: 'Playfair Display SC', serif;
+  font-size: 20px;
+
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+img {
+	max-width: 100%
+}
+
+.ikkese {
+display: none;
+}
+
+
+.wrapper {
+	box-sizing: border-box;
+	max-width: 100%;
+	margin: 0 10% 0 10%;
+
+
+}
+
+header {
+	box-sizing: border-box;
+
+}
+.content {
+	box-sizing: border-box;
+	max-width: 100%;
+
+}
+.about-us {
+  display: inline-block;
+margin-top: 20px;
+}
+.about-image {
+	max-width: 100%;
+
+}
+.about-text {
+
+}
+.contactform {
+	display: flex;
+	justify-content: center;
+	margin: 0 0 0 0;
+
+	}
+.fields {
+	float: left;
+	width: 100%;
+	}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: black;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
